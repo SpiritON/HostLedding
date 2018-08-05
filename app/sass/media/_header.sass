@@ -1,0 +1,179 @@
+@media (max-width: 1170px)
+
+	.mainHeader
+		flex-direction: column
+		position: relative
+		padding:
+			top: 30px
+
+		.headerLogo
+			margin:
+				right: 0
+				bottom: 30px
+		
+		.navMenu
+			display: none
+			
+
+		.headerNav
+			margin-left: auto
+
+		.burgerMenu
+			display: block
+			width: 30px
+			height: 24px
+			position: absolute
+			top: 30px
+			right: 50px
+			transition: background 0.3s
+			background-color: transparent
+			cursor: pointer
+			
+			span 
+				display: inline-block
+				position: absolute
+				top: 10px
+				left: 0px
+				right: 0px
+				height: 4px
+				background: black
+				transition: background 0.3s
+
+
+				&::after,
+				&::before
+					content: ""
+					position: absolute
+					display: block
+					left: 0
+					width: 100%
+					height: 4px
+					background-color: black
+					transition-duration: 0.3s, 0.3s
+					transition-delay: 0.3s, 0
+
+
+				&::before
+					transition-property: top, transform
+					top: -10px
+
+				&::after
+					transition-property: bottom, transform
+					bottom: -10px
+
+		.burgerMenu.active 
+
+			span
+				background: none
+
+				&::before
+					top: 0
+					transform: rotate(45deg)
+
+				&::after
+					bottom: 0
+					transform: rotate(-45deg)
+
+				&::before,
+				&::after
+					transition-delay: 0, 0.3s
+
+		.burgerMenu.active ~ .navMenu
+			display: block
+			transition: 1s
+			position: absolute
+			top: 30px
+			right: 0px
+			widht
+
+
+			li
+				padding-bottom: 10px
+
+		.headerLiveHelp
+			padding:
+				top: 30px
+			width: 100%
+			justify-content: center
+			flex-direction: column
+
+		.liveText
+			margin:
+				bottom: 20px
+			text-align: center
+
+		.liveHelpBtn
+
+			margin: 
+				bottom: 30px
+
+			&::after
+				display: none
+
+
+
+
+@media (max-width: 768px)
+
+	.mainHeader
+		justify-content: flex-start
+		align-items: flex-start
+	
+		.burgerMenu.active ~ .navMenu
+			background-color: grey
+			z-index: 999
+			height: auto
+			width: 200px
+			right: 16px
+			top: 40px
+
+			li
+				justify-content: center
+				margin: 0
+				padding: 
+					left: 15px
+					right: 15px
+					bottom: 5
+					top: 5px
+				font-size: 18px
+				line-height: 18px
+				border-bottom: 2px solid #ffe13e
+				
+		.headerLogo
+			font-size: 24px
+			margin:
+				right: 0
+				bottom: 30px
+
+		.mainHeader .headerLiveHelp
+			padding-top: 10px
+
+
+
+
+
+
+
+
+
+			
+
+	
+	
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	

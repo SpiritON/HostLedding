@@ -1,0 +1,174 @@
+.aboutUs
+	background-image: url("../img/airball.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+
+.aboutUsMain
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	padding: 
+		top: 230px
+		bottom: 135px
+	
+	.aboutUsText
+		text-align: center
+		color: white
+		margin-bottom: 45px
+
+	
+	.aboutUsTitle 
+		font-size: 48px
+		line-height: 48px
+		margin-bottom: 45px
+		font-family: "Rockwell", monospace
+
+	.aboutUsSupTitle 
+		font-size: 30px
+		margin-bottom: 30px
+		
+
+	.aboutUsImage
+		margin-bottom: 55px
+		animation-name: roll
+		animation-duration: 5s
+		animation-iteration-count: infinite 
+		animation-timing-function: linear
+		transform-origin: 63px 56px
+
+		@keyframes roll 
+			0%
+				transform: rotate(0deg)
+			100%
+				transform: rotate(360deg)
+
+
+
+
+
+
+	.availabilityDomain
+		border: 18px solid rgba(221, 221, 221, 0.5)
+		font-size: 0
+		display: flex
+		flex-wrap: wrap
+
+	
+		input, select, button 
+			height: 55px
+		
+		input 
+			width: 225px
+			padding:
+				left: 25px
+				right: 25px
+			font-size: 18px
+			
+		.arrowStyleWrap
+
+			position: relative
+			background-color: #ffe13e
+			z-index: 1
+
+			.arrowStyle 
+				position: absolute;
+				z-index: 99
+				border: 8px solid transparent
+				border-bottom: 0
+				right: 12px
+				
+				&:nth-child(1) 
+					top: 24px
+					border-top-color: #fff
+					
+				
+				&:nth-child(2) 
+					top: 21px
+					border-top-color: #ffe13e
+					
+
+		select 
+			position: relative
+			width: 109px
+			background-color: transparent
+			padding-left: 25px
+			border-right: 1px solid white
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			font-size: 18px
+			font-family: "Raleway-Bold"
+			font-weight: bold
+			cursor: pointer
+			z-index: 999
+			
+			option
+				font-family: "Raleway-Bold"
+				font-weight: bold
+				background-color: #ffe13e
+
+
+		button
+			width: 150px
+			color: white
+			background-color: #ffe13e
+			font-size: 14px
+			font-family: "Raleway-Bold"
+			font-weight: bold
+			cursor: pointer
+			transition-duration: 0.3s
+
+
+			&:hover
+				background-color: #f2d73a
+
+			&:active
+				background-color: #e5cb37	
+				box-shadow: 0 2px 3px inset black
+
+
+			
+
+
+
+		 
+			
+
+
+			 
+			
+			
+
+
+
+			
+			
+		
+
+
+		
+
+  	
+
+	
+
+
+
+	
+  	
+
+ 
+  	
+
+
+
+
+		
+
+		
+		
+
+
