@@ -7,23 +7,22 @@ $(document).ready(function(){
 	  	$(".owl-carousel").owlCarousel({
 
 	loop: true,
-  	margin: 50,
+  	margin: 40,
   	dots: true,
+  	autoplay: true,
+  	autoplayTimeout: 5000,
   	responsiveClass:true,
 		responsive:{
         320:{
-            items:1,
-            dot: true
-            
+            items:1
         },
-        768:{
-            items:2,
-            dot: true
+        769:{
+            items:2
         },
         1170:{
-            items:3,
-            dot: true
-        },
+            items:3
+        }
+
 
     }
 
@@ -72,7 +71,7 @@ $(function() {
 });
 
 //burgerMenuButton
-$('.burgerMenu').on('click', function(){
+$('.headerBurgerMenu').on('click', function(){
 
 	$(this).toggleClass('active')
 

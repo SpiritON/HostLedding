@@ -1,117 +1,84 @@
 .services
 	display: flex
-	align-items: space-between
 	color: white
 	flex-wrap: wrap
-	justify-content: center
-	
 
-	a
-		color: white
+	&ItemWrap--Blue
 
-.servicesItemWrap--Blue
-
-	background-color: #202242
-	width: 50%
-	display: flex
-	justify-content: flex-end
-	
-	.servicesItem
-	
-		.servicesBtn
-
-			a
-
-			&:hover
-				background-color: #2b2e59
-
-			&:active
-				background-color: #373b73	
-				box-shadow: 0 2px 3px inset black
-	
-	
-
-.servicesItemWrap--Yellow
-
-	background-color: #ffe13e
-	width: 50%
-	display: flex
-	justify-content: flex-start
-	
-
-.servicesItem
-	display: flex
-	justify-content: space-between
-	align-items: center
-	flex-direction: column
-	max-width: 445px
-
-	padding:
-		left: 70px
-		right: 70px	
-		bottom: 100px
-		top: 50px
-	
-	.servicesItemImage
+		background-color: #202242
+		width: 50%
 		display: flex
+		justify-content: flex-end
+
+	&ItemWrap--Yellow
+
+		background-color: #ffe13e
+		width: 50%
+		display: flex
+		justify-content: flex-start
+
+	&Item
+
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-direction: column
+		width: 445px
+		padding:
+			left: 70px
+			right: 70px	
+			bottom: 100px
+			top: 50px
+		
+	&ItemImage
+
 		width: 370px
 		height: 280px
-		justify-content: center
-		align-items: center
+		position: relative
 
-	.servicesItemTitle
+		img
+			display: inline-block
+			position: absolute
+			margin: auto
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+
+
+	&ItemTitle
+
 		font-size: 36px
 		line-height: 36px
 		text-align: center
 		margin-bottom: 20px
 		font-family: "Raleway-Bold"
 
-	.servicesItemSupTitle
+	&ItemSupTitle
+
 		text-align: center
 		margin-bottom: 35px
 		
 
-	.servicesBtn
+	&Btn
+
+		width: 149px
 
 		a
+				
 			width: 149px
-			height: 50px
-			display: flex
-			justify-content: center
 			font-family: "Raleway-Bold"
-			align-items: center
 			font-weight: bold
 			border: 3px solid white
+			color: white
+			text-align: center
+			display: inline-block
+			padding: 
+				top: 10px
+				bottom: 10px
 
-.servicesItemWrap--Yellow
 
-	.servicesItem
-	
-		.servicesBtn
 
-			transition-duration: 0.3s
-
-			&:hover
-				background-color: #2b2e59
-
-			&:active
-				background-color: #3d4280	
-				box-shadow: 0 2px 12px inset white
-
-.servicesItemWrap--Blue
-
-	.servicesItem
-	
-		.servicesBtn
-
-			transition-duration: 0.3s
-
-			&:hover
-				background-color: #f2d73a
-
-			&:active
-				background-color: #e5cb37	
-				box-shadow: 0 2px 6px inset black
 
 
 

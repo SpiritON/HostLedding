@@ -1,8 +1,8 @@
-.features
+.mainFeatures
 	background-color: #fbf8f1
 		
 
-.featuresMain
+.features
 	background-image: url("../img/molecular-big.png")
 	background-position: center 90px
 	background-repeat: no-repeat
@@ -12,53 +12,71 @@
 	text-align: center
 
 	
-	.featuresTitle
+	&Title
+
 		font-size: 48px
 		line-height: 48px
 		font-family: "Raleway-Bold"
 		font-weight: bold
 		margin-bottom: 30px
 		
-	.featuresText
+	&Text
+
 		font-size: 24px
 		margin-bottom: 35px
 
-	.featuresItemList
+	&ItemList
+
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
 		overflow: hidden
 
 		
-		.featuresItem
-			width: 260px
-			padding:
-				top: 25px
-				bottom: 25px
-			margin-bottom: 30px
-			
-			.featuresItemImage
-				height: 150px
-				display: flex
-				align-items: center
-				justify-content: center
-				padding-bottom: 65px
-				position: relative
-				
-				&::after
-					content: ""
-					width: 70px
-					height: 3px
-					background-color: grey
-					position: absolute
-					bottom: 33px
+	&Item
 
-			.featuresItemTitle
-				font-family: "Rockwell", monospace
-				color: #f4d320
-				font-size: 30px
-				margin-bottom: 25px
-				line-height: 30px
+		width: 260px
+		padding:
+			top: 25px
+			bottom: 25px
+		margin-bottom: 30px
+			
+	&ItemImage
+
+		height: 150px
+		margin-bottom: 65px
+		position: relative
+
+		img
+			max-width: 100%
+			max-height: 100%
+			top: 0 
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			display: block
+			position: absolute
+				
+		&::after
+
+			content: ""
+			width: 70px
+			height: 3px
+			background-color: grey
+			position: absolute
+			bottom: -35px
+			margin: 0 auto
+			left: 0
+			right: 0
+
+	&ItemTitle
+
+		font-family: "Rockwell", monospace
+		color: #f4d320
+		font-size: 30px
+		margin-bottom: 25px
+		line-height: 30px
 
 
 

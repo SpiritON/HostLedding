@@ -5,30 +5,41 @@
 	"Raleway-SemiBold", "Raleway-Thin", "Raleway-BlackItalic", "Raleway-BoldItalic", 
 	"Raleway-ExtraLightItalic", "Raleway-LightItalic", "Raleway-MediumItalic", "Raleway-Italic", 
 	"Raleway-SemiBoldItalic", "Raleway-ThinItalic", "Rockwell", "Rockwell-Bold", "Rockwell-BoldItalic", 
-	"Rockwell-Italic", "Lato-Bold", "Arial", monospace, sans-serif
+	"Rockwell-Italic", "Lato-Bold", "Arial", monospace, sans-serif 
+	color: #202242
+
 
 .container 
 	width: 1170px
+	padding: 
+		left: 20px
+		right: 20px
 	margin: 0 auto
+	box-sizing: border-box
 
 
-	.button 
 
-		a
 
-			transition-duration: 0.3s
+.button 
 
-			&:hover
-				background-color: #f2d73a
 
-			&:active
-				background-color: #e5cb37	
-				box-shadow: 0 2px 3px inset
+
+	a
+		box-sizing: border-box
+		transition-duration: .2s
+
+		&:hover
+			background-color: #f2d73a
+
+		&:active
+			background-color: #e5cb37	
+			box-shadow: 0 2px 3px inset
 
 
 a 
+
 	text-decoration: none
-	color: black
+	color: #202242
 
 p
 	margin: 0
@@ -41,21 +52,12 @@ input, select, button
 
 li
 	list-style: none
+	
 
-	a
-		transition-duration: 0.2s
 
-		&:hover
-			color: #ffe13e
-			font-weight: bold
-
-		&:active
-			color: #ffe13e
-			font-weight: bold
-			text-shadow: -2px 1px 3px grey
 input
 	
-	transition-duration: 0.2s
+	transition: all .2s
 
 	&:focus
 		outline: 2px solid #ffe13e

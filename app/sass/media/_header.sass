@@ -1,34 +1,109 @@
 @media (max-width: 1170px)
 
-	.mainHeader
+	.header
 		flex-direction: column
 		position: relative
 		padding:
 			top: 30px
 
-		.headerLogo
+		&Logo
+			margin:
+				right: 0
+				bottom: 30px
+
+		&NavMenu
+			justify-content: center
+			flex-wrap: wrap
+			margin: 0 
+
+			li
+
+				margin: 0
+				margin:
+					bottom: 20px
+
+		&LiveHelp
+			width: 100%
+			justify-content: space-between
+
+			&::before
+				display: none
+
+		&HelpBtn
+			a
+
+				&::after
+
+					display: none
+
+		&HelpText
+			text-align: center
+			margin:
+				bottom: 0
+
+
+
+
+
+@media (max-width: 768px)
+
+	.header
+		align-items: center
+
+		&Logo
+			align-self: flex-start
+			font-size: 24px
 			margin:
 				right: 0
 				bottom: 30px
 		
-		.navMenu
-			display: none
-			
+		&Menu
+			height: 0
 
-		.headerNav
-			margin-left: auto
+		&NavMenu 
+			opacity: 0
+			transform: scale(0,0)
+			transition: all .3s
+			z-index: 999
+			position: absolute
+			flex-direction: column
+			text-align: center
+			width: 100%
+			right: 0
+			top: 130px
 
-		.burgerMenu
+			&::before
+				content: ''
+				display: block
+				width: 100%
+				position: absolute
+				z-index: 999
+				top: -60px
+				border-top: 60px solid #202242
+				border-radius: 150px 150px 0 0  / 400px 400px 0 0
+
+			&::after
+				content: ''
+				display: block
+				width: calc(100% - 6px)
+				position: absolute
+				z-index: 9999
+				top: -57px
+				left: 3px
+				border-top: 57px solid #fff
+				border-radius: 150px 150px 0 0  / 400px 400px 0 0 
+
+		&BurgerMenu
 			display: block
 			width: 30px
 			height: 24px
 			position: absolute
 			top: 30px
-			right: 50px
+			right: 0
 			transition: background 0.3s
 			background-color: transparent
 			cursor: pointer
-			
+
 			span 
 				display: inline-block
 				position: absolute
@@ -61,7 +136,7 @@
 					transition-property: bottom, transform
 					bottom: -10px
 
-		.burgerMenu.active 
+		&BurgerMenu.active 
 
 			span
 				background: none
@@ -78,75 +153,118 @@
 				&::after
 					transition-delay: 0, 0.3s
 
-		.burgerMenu.active ~ .navMenu
-			display: block
-			transition: 1s
-			position: absolute
-			top: 30px
-			right: 0px
-			widht
-
+		&BurgerMenu.active ~ &NavMenu
+			
+			opacity: 1
+			transform: scale(1,1)
 
 			li
-				padding-bottom: 10px
+				
+				border:
+					bottom: 2px solid #202242		
+					right: 2px solid #202242
+					left: 2px solid #202242
+				margin-bottom: 0
+				background-color: #fff
+				position: relative
+				padding: 
+					left: 0
+					right: 0
 
-		.headerLiveHelp
-			padding:
-				top: 30px
-			width: 100%
-			justify-content: center
-			flex-direction: column
 
-		.liveText
+				&:first-child
+					border-top: 2px solid #202242
+
+				&:last-child
+					border-radius: 0 0 15px 15px
+
+
+
+
+				a
+
+					width: 100%
+					display: inline-block
+					z-index: 999999
+					padding: 
+						bottom: 10px
+						top: 10px
+
+					&::before
+
+						content: ''
+						width: 20px
+						height: 20px
+						display: block
+						position: absolute
+						border-radius: 50%
+						top: calc(50% - 10px)
+						left: 30px
+						border: 3px solid #202242
+						box-sizing: border-box
+
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						transform: none
+						left: 0
+						right: 0
+						margin-left: auto
+						margin-right: 0
+						opacity: 1
+						width: 40px
+						height: 3px
+						background-color: #202242
+						right: 30px
+						top: calc(50% - 1.5px)
+
+					&:hover
+
+						&::before
+							transition: all 0.2s
+							background-color: #ffe13e
+
+					&:active
+						color: #ffe13e
+
+						&::before
+
+							background-color: lightgreen
+
+						&::after
+							
+							background-color: lightgreen
+
+
+
+
+						
+
+		
+
+		&HelpBtn
+			a
+
+				&::after
+
+					display: block
+
+
+
+		&LiveHelp
+			margin-top: 0
+			padding-top: 10px
+
+		&HelpText
+
 			margin:
 				bottom: 20px
-			text-align: center
 
-		.liveHelpBtn
-
-			margin: 
-				bottom: 30px
-
-			&::after
-				display: none
+			
+			
 
 
-
-
-@media (max-width: 768px)
-
-	.mainHeader
-		justify-content: flex-start
-		align-items: flex-start
-	
-		.burgerMenu.active ~ .navMenu
-			background-color: grey
-			z-index: 999
-			height: auto
-			width: 200px
-			right: 16px
-			top: 40px
-
-			li
-				justify-content: center
-				margin: 0
-				padding: 
-					left: 15px
-					right: 15px
-					bottom: 5
-					top: 5px
-				font-size: 18px
-				line-height: 18px
-				border-bottom: 2px solid #ffe13e
-				
-		.headerLogo
-			font-size: 24px
-			margin:
-				right: 0
-				bottom: 30px
-
-		.mainHeader .headerLiveHelp
-			padding-top: 10px
 
 
 

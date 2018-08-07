@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>Host ledding</title>
 			<link rel="stylesheet" href="css/libs.min.css">
-			<link rel="stylesheet" href="css/main.css">
 			<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
 
 	</head>
 		
@@ -14,20 +14,19 @@
 		<div class="wrapper">
 
 			<!-- HeaderStart -->
-			<header class="header">
+			<header class="mainHeader">
 				<div class="container">
-					<div class="mainHeader">
+					<div class="header">
 						<div class="headerLogo">
 							<img src="img/Logo.png" alt="Maguwohost" width="26" height="32">
 							<p>Maguwo<span>Host</span></p>
 						</div>
-
-						<nav class="headerNav">
-							<div class="burgerMenu">
+						<nav class="headerMenu">
+							<div class="headerBurgerMenu">
 								<span></span>
 							</div>
-							<ul class="navMenu">
-								<li><a href="#home">home</a></li>
+							<ul class="headerNavMenu">
+								<li><a class="current" href="#home">home</a></li>
 								<li><a href="#about">about</a></li>
 								<li><a href="#pricing">pricing</a></li>
 								<li><a href="#domain">domain</a></li>
@@ -36,23 +35,23 @@
 						</nav>
 
 						<div class="headerLiveHelp">
-							<p class="liveText">Do you need help? Just Email, Live chat or Call us</p>
-							<div class="liveHelpBtn button">
+							<p class="headerHelpText">Do you need help? Just Email, Live chat or Call us</p>
+							<div class="headerHelpBtn button">
 								<a href="#LiveChat">Live Chat</a>
 							</div>
-							<p class="liveHelpNumber">6284-6534</p>
+							<p class="headerHelpNumber">6284-6534</p>
 						</div>
 					</div>
 				</div>
 			</header>
 			<!-- HeaderEnd -->
 
-			<main>
+			<main class="main">
 
 			<!-- AboutUsStart -->
-				<section class="aboutUs">
+				<section class="aboutUsMain">
 					<div class="container">
-						<div class="aboutUsMain">
+						<div class="aboutUs">
 							<div class="aboutUsText">
 								<p class="aboutUsTitle">Just a Proffesional Web Hosting Services</p>
 								<p class="aboutUsSupTitle">modern - fast - reliable</p>
@@ -62,12 +61,12 @@
 								<img src="img/molecular.png" alt="molecular" width="102" height="110">
 							</div>
 
-							<form class="availabilityDomain" action="#" method="post">
+							<form class="aboutUsAvailability" action="#" method="post">
 								<input class="" type="text" name="web-adress" id="adress" placeholder="Your Domain name ...">
 								<div class="arrowStyleWrap">
 									<div class="arrowStyle"></div>
 									<div class="arrowStyle"></div>
-									<select name="domain" id="domain-name">
+									<select name="Domain" id="domain-name">
 										<option value=".com" autofocus>.com</option>
 										<option value=".org">.org</option>
 										<option value=".ua">.ua</option>
@@ -88,7 +87,7 @@
 						<div class="servicesItemWrap--Blue">
 							<div class="servicesItem">
 								<div class="servicesItemImage">
-									<img src="img/webhost.png" alt="webhost" width="168" height="169">
+									<img src="img/webhost.png" alt="webhost" width="168" height="auto">
 								</div>
 								<p class="servicesItemTitle">#1 Webhost Services</p>
 								<p class="servicesItemSupTitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae obcaecati quo veritatis ipsam commodi aliquam labore totam atque minus, in officiis modi voluptates itaque impedit, repellendus reprehenderit optio ratione! Reiciendis.</p>
@@ -100,7 +99,7 @@
 						<div class="servicesItemWrap--Yellow">
 							<div class="servicesItem">
 								<div class="servicesItemImage">
-									<img src="img/com.png" alt=".com" width="295" height="73">
+									<img src="img/com.png" alt=".com" width="295" height="auto">
 								</div>
 								<p class="servicesItemTitle">#1 Domain Services</p>
 								<p class="servicesItemSupTitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae obcaecati quo veritatis ipsam commodi aliquam labore totam atque minus, in officiis modi voluptates itaque impedit, repellendus reprehenderit optio ratione! Reiciendis.</p>
@@ -114,9 +113,9 @@
 			<!-- ServicesEnd -->
 			
 			<!-- FeaturesStart -->
-			<section class="features">
+			<section class="mainFeatures">
 				<div class="container">
-					<div class="featuresMain">
+					<div class="features">
 						<p class="featuresTitle">Our Features</p>
 						<p class="featuresText">Our Best Features</p>
 						
@@ -218,6 +217,28 @@
 									<img src="img/user-icon.png" alt="user" width="100" height="100">
 								</div>
 							</div>
+							<div class="clientsReviewItem">
+								<p class="clientsReviewText">&#147; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga tempore maiores eius et, nemo autem tenetur, error, rem assumenda excepturi explicabo minus similique mollitia quisquam soluta at libero pariatur possimus. &#148;</p>
+								<p class="clientsReviewAuthor">-Anna</p>
+								<div class="clientsReviewImage">
+									<img src="img/user-icon.png" alt="user" width="100" height="100">
+								</div>
+							</div>
+							<div class="clientsReviewItem">
+								<p class="clientsReviewText">&#147; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga tempore maiores eius et, nemo autem tenetur, error, rem assumenda excepturi explicabo minus similique mollitia quisquam soluta at libero pariatur possimus. &#148;</p>
+								<p class="clientsReviewAuthor">-Anna</p>
+								<div class="clientsReviewImage">
+									<img src="img/user-icon.png" alt="user" width="100" height="100">
+								</div>
+							</div>
+							<div class="clientsReviewItem">
+								<p class="clientsReviewText">&#147; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga tempore maiores eius et, nemo autem tenetur, error, rem assumenda excepturi explicabo minus similique mollitia quisquam soluta at libero pariatur possimus. &#148;</p>
+								<p class="clientsReviewAuthor">-Anna</p>
+								<div class="clientsReviewImage">
+									<img src="img/user-icon.png" alt="user" width="100" height="100">
+								</div>
+							</div>
+							
 						</div>
 					</div>
 
@@ -227,9 +248,9 @@
 			<!-- OurClientsEnd -->
 			
 			<!-- StartPricing -->
-			<section class="pricing">
+			<section class="pricingMain">
 				<div class="container">
-					<div class="pricingMain">
+					<div class="pricing">
 						<div class="pricingText">
 							<p class="pricingTitle">Do you want to view Plans &#38; Pricing ?</p>
 							<p class="pricingSupTitle">Follow the button in the right section.</p>
@@ -266,9 +287,9 @@
 							</ul>
 
 							<div class="footerSocial">
-								<a href="#" class="icon-twitter"></a>
-								<a href="#" class="icon-instagram"></a>
-								<a href="#" class="icon-gplus"></a>
+								<a href="#" class="icon-twitter icon"></a>
+								<a href="#" class="icon-instagram icon"></a>
+								<a href="#" class="icon-gplus icon"></a>
 							</div>
 
 							<div class="footerBtn" id="toTop">
@@ -290,7 +311,7 @@
 			<!-- EndFooter -->
 
 		</div>
-		<!-- <script src="js/libs.min.js"></script> -->
+		<script src="js/libs.min.js"></script>
 		<script src="libs/jquery/dist/jquery.js"></script>
 		<script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
 		<script src="js/common.js"></script>
